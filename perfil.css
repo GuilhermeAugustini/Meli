@@ -5,26 +5,58 @@ font-style: normal;
 font-weight: normal;
 src: local('MuseoSans100'), url('fonts/museosans-100.woff') format('woff');
 }
+img {
+    max-width: 100%
+}
+p, a, div, h1, h2 {
+    margin: 0px
+}
+.navbar-default {
+    margin: 0px;
+    border: 0px;
+    border-radius: 0px;
+}
+.space {
+    padding-top: 30px;
+    padding-bottom: 30px
+}
+.space-top {
+    padding-top: 60px;
+}
+.space-bottom {
+    padding-bottom: 60px;
+}
+.left {
+    text-align: left;
+}
+.center {
+    text-align: center;
+}
+.right {
+    text-align: right;
+}
+.flow-root {
+    display: inline-block;
+    width: 100%
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex{
+    display: flex;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.border-circle{
+    width:50px;
+    height: 50px;
+     border-radius: 50%
+}
 
-img {max-width: 100%}
-
-p, a, div, h1, h2 {margin: 0px}
-h4{font-weight: bolder; font-size: 20px;}
-.navbar-default {margin: 0px;border: 0px;border-radius: 0px;}
-
-.space {padding-top: 30px;padding-bottom: 30px}
-.space-top {padding-top: 60px;}
-.space-bottom {padding-bottom: 60px;}
-.left {text-align: left;}
-.center {text-align: center;}
-.right {text-align: right;}
-.flow-root {display: inline-block;width: 100%}
-.flex-center{display: flex;justify-content: center;align-items: center;}
-.flex{display: flex;}
-.flex-column{display: flex;flex-direction: column;}
-.border-circle{width:40px;height: 40px; border-radius: 50%}
-
-/*.container {max-width: 1000px;width: 100% !important}*/
 /*MENU*/
 .navbar{
     background-color: #fff159;
@@ -94,11 +126,11 @@ h4{font-weight: bolder; font-size: 20px;}
 .recomendados-card{
     width: 100%;
     padding-right:15px;
-    height: 160px;
+    height: 310px;
 }
 .recomendados-img{
     width: 100%;
-    height: 150px;
+    height: 300px;
 }
 .recomendados-persona{
     padding: 0 15px;
@@ -245,8 +277,8 @@ h4{font-weight: bolder; font-size: 20px;}
     border: 1px solid #cccccc45;
 }
 .ofertas-card img{
-    width: 90px;
-    height: 90px;
+    width: 250px;
+    height: 220px;
     display: block;
     margin: 10px auto;
 }
@@ -254,7 +286,7 @@ h4{font-weight: bolder; font-size: 20px;}
     margin: 10px 0;
 }
 .ofertas-valor{
-    padding: 10px;
+    padding: 10px 30px;
     padding-bottom: 20px;
     width: 100%;
 }
@@ -305,8 +337,6 @@ h4{font-weight: bolder; font-size: 20px;}
 .vendedores{
     padding-top: 20px;
 }
-.container-vendedores{
-}
 .vendedores-title{
     margin: 10px 0;
 }
@@ -318,7 +348,12 @@ h4{font-weight: bolder; font-size: 20px;}
 .vendedores-persona{
     width: 100%;
 }
+.vendedores-persona p{
+    margin: 10px 0;
+    font-weight: bold;
+}
 .vendedores-card{
+    display: table;
     margin-right: 20px;
     width: 260px;
     height: 100%;
@@ -397,57 +432,15 @@ h4{font-weight: bolder; font-size: 20px;}
 }
 /*! MODAL CENTER !*/
 
-/*! Galeria Slick Slider !*/
-.galeria .division{
-    max-width:calc(100%/5);
-    align-items:center;
-    text-align:center;
-    border:1px solid #fff;
-    width:100%;
-    height:135px;
-    display:grid;
-    float:left;
-}
-.galeria .container .zoom{
-    visibility:hidden;
-    transition:top 51s ease;
-    position:relative;
-    height:100%;
-    width:100%!important;
-    display:grid!important;
-    align-items:center!important
-}
-.galeria .container .division:hover .zoom{
-    max-width:100%;
-    background-color:rgba(38,51,27,.75);
-    text-align:center;
-    visibility:visible;
-    -moz-transition:all .5s ease-in-out;
-    transition:all .5s ease-in-out
-}
-.galeria .division .zoom a{
-    height:100%;
-    display:grid;
-    align-items:center;
-    width:100%
-}
-.galeria .division .zoom img{
-    width:100%;
-    max-width:35px;
-    margin:0 auto
-}
-/*! Fim Galeria Slick Slider !*/
 @media(max-width:767px){
     .footer-app{
         margin-top: 30px;
     }
 }
-
 @media only screen and (max-width: 991px) and (min-width: 768px) {
     .navbar-header, .navbar-collapse {margin: 0px -15px !important;}
     .navbar-collapse {border-top: 1px solid #e0e0e0;}
 }
-
 /*! COLAPSE 991px !*/
 @media (max-width: 991px) {
     .hide991 {display: none;}
