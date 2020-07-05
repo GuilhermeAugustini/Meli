@@ -87,11 +87,14 @@ p, a, div, h1, h2 {margin: 0px}
 }
 .container-recomendados{
     display: flex;
-    height: 50px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
 }
 .recomendados-card{
     width: 100%;
     padding-right:15px;
+    height: 160px;
 }
 .recomendados-img{
     width: 100%;
@@ -102,6 +105,13 @@ p, a, div, h1, h2 {margin: 0px}
     position: relative;
     top: -70px;
     color: #fff;
+}
+.recomendados-descricao{
+    padding: 20px;
+}
+.recomendados-perfil{
+    width: 50px;
+    margin-left: 10px;
 }
 .recomendados-descricao{
     padding: 20px;
@@ -216,7 +226,6 @@ p, a, div, h1, h2 {margin: 0px}
     margin-left: 15px;
 }
 .container-ofertas{
-    width: 90%;
     padding: 20px 0;
 }
 .ofertas-title{
@@ -304,14 +313,16 @@ p, a, div, h1, h2 {margin: 0px}
 }
 .vendedores-avaliacoes{
     overflow-x: auto;
+    overflow-y: hidden;
     white-space: nowrap;
 }
 .vendedores-persona{
     width: 100%;
 }
 .vendedores-card{
-    padding: 20px;
+    margin-right: 20px;
     width: 260px;
+    height: 100%;
 }
 .vendedores-persona img {
     width: 150px;
@@ -325,7 +336,7 @@ p, a, div, h1, h2 {margin: 0px}
 }
 /*FOOTER*/
 .container-footer{
-    margin: 0 auto;
+    margin: 20px auto;
     color: #000;
 }
 .footer-menu a{
@@ -336,6 +347,15 @@ p, a, div, h1, h2 {margin: 0px}
     padding: 10px 25px;
     border-radius: 5px;
     border: 1px solid #ccc;
+}
+/*ICON*/
+.fa-truck{
+    position: relative;
+    top: -20px;
+    float: right;
+    margin: 0 10px;
+    color: #49ce49;
+    font-size: 18px;
 }
 /*! MODAL CENTER */
 .modal-center .modal{
