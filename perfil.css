@@ -185,6 +185,7 @@ p, a, div, h1, h2 {margin: 0px}
 }
 .container-ofertas{
     overflow-x: auto;
+    white-space: nowrap;
     max-width: auto;
 }
 .tendencias-title{
@@ -216,6 +217,7 @@ p, a, div, h1, h2 {margin: 0px}
 }
 .container-ofertas{
     width: 90%;
+    padding: 20px 0;
 }
 .ofertas-title{
     color: #fff;
@@ -231,6 +233,7 @@ p, a, div, h1, h2 {margin: 0px}
     background: #fff;
     margin-right: 5px;
     padding-top: 12px;
+    border: 1px solid #cccccc45;
 }
 .ofertas-card img{
     width: 90px;
@@ -299,14 +302,16 @@ p, a, div, h1, h2 {margin: 0px}
 .vendedores-title{
     margin: 10px 0;
 }
-.vendedores-avaliaçoes{
+.vendedores-avaliacoes{
     overflow-x: auto;
+    white-space: nowrap;
 }
 .vendedores-persona{
     width: 100%;
 }
 .vendedores-card{
     padding: 20px;
+    width: 260px;
 }
 .vendedores-persona img {
     width: 150px;
@@ -314,6 +319,9 @@ p, a, div, h1, h2 {margin: 0px}
     border-radius: 50%;
     display: block;
     margin: 0 auto
+}
+.vendedores-comentarios{
+    white-space: normal;
 }
 /*FOOTER*/
 .container-footer{
@@ -410,7 +418,11 @@ p, a, div, h1, h2 {margin: 0px}
     margin:0 auto
 }
 /*! Fim Galeria Slick Slider !*/
-
+@media(max-width:767px){
+    .footer-app{
+        margin-top: 30px;
+    }
+}
 
 @media only screen and (max-width: 991px) and (min-width: 768px) {
     .navbar-header, .navbar-collapse {margin: 0px -15px !important;}

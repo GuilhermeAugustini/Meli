@@ -437,6 +437,9 @@ p, a, div, h1, h2 {margin: 0px}
         width: 32.4%;
         height: 100px;
     }
+    .footer-app{
+        margin-top: 30px;
+    }
 }
 @media(max-width: 480px){
     .container-tendencias{
