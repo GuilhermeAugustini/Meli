@@ -58,6 +58,7 @@ p, a, div, h1, h2 {margin: 0px}
 .banner-img img{
     width: 100%;
     height: 100%;
+    filter: brightness(0.7);
 }
 .banner-content{
     position: relative;
@@ -66,6 +67,8 @@ p, a, div, h1, h2 {margin: 0px}
     color: #fff;
 }
 .banner-content h3{
+    font-weight: bolder;
+    font-size: xx-large;
     color: yellow;
 }
 .container-banner{
@@ -308,7 +311,6 @@ p, a, div, h1, h2 {margin: 0px}
     top: -20px;
     float: right;
     margin: 0 10px;
-    background: ;
     color: #49ce49;
     font-size: 18px;
 }
@@ -411,6 +413,9 @@ p, a, div, h1, h2 {margin: 0px}
     .categorias-ofertas{
         width: 100%;
     }
+    .container-ofertas{
+        width: 98%;
+    }
     .container-livros{
         flex-direction: column-reverse;
     }
@@ -422,6 +427,25 @@ p, a, div, h1, h2 {margin: 0px}
     }
     .ofertas-card{
         white-space: nowrap;
+    }
+}
+@media(max-width:767px){
+    .container-canais{
+        margin: 0 25px;
+    }
+    .canais-img img{
+        width: 32.4%;
+        height: 100px;
+    }
+}
+@media(max-width: 480px){
+    .container-tendencias{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tendencias-img{
+        margin-right: 0;
     }
 }
 @media only screen and (max-width: 991px) and (min-width: 768px) {
