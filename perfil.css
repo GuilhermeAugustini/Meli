@@ -1,0 +1,462 @@
+a, a:hover, a:focus {outline: none;text-decoration: none; color: #000;}
+@font-face {
+font-family: 'MuseoSans100';
+font-style: normal;
+font-weight: normal;
+src: local('MuseoSans100'), url('fonts/museosans-100.woff') format('woff');
+}
+
+img {max-width: 100%}
+
+p, a, div, h1, h2 {margin: 0px}
+
+.navbar-default {margin: 0px;border: 0px;border-radius: 0px;}
+
+.space {padding-top: 30px;padding-bottom: 30px}
+.space-top {padding-top: 60px;}
+.space-bottom {padding-bottom: 60px;}
+.left {text-align: left;}
+.center {text-align: center;}
+.right {text-align: right;}
+.flow-root {display: inline-block;width: 100%}
+.flex-center{display: flex;justify-content: center;align-items: center;}
+.flex{display: flex;}
+.flex-column{display: flex;flex-direction: column;}
+.border-circle{width:40px;height: 40px; border-radius: 50%}
+
+/*.container {max-width: 1000px;width: 100% !important}*/
+/*MENU*/
+.navbar{
+    background-color: #fff159;
+}
+.logo{
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+}
+.logo img{
+    width: 60px;
+    margin-left: 10px;
+}
+.nav-form{
+    margin-left: 150px;
+}
+.nav-perfil{
+    margin: 15px;
+}
+.nav-name{
+    margin-left: 10px;
+}
+/*BANNER*/
+.banner{
+    width: 100%;
+    height: 30vh;
+}
+.banner-img{
+    width: 100%;
+    height: 100%;
+    background: url(/img/perfil.jpg) no-repeat center;
+    background-size: cover;
+}
+.banner-perfil img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.banner-perfil{
+    position: relative;
+    justify-content: start;
+    align-items: end;
+    top: 110px;
+    left: 35px;
+}
+
+.banner-content h3{
+    color: yellow;
+}
+.container-banner{
+    justify-content: end;
+    align-items: center;
+}
+/*Recomendados*/
+.recomendados{
+    margin-top: 60px;
+}
+.recomendados-title{
+    padding: 20px 0;
+}
+.container-recomendados{
+    display: flex;
+    height: 50px;
+}
+.recomendados-card{
+    width: 100%;
+    padding-right:15px;
+}
+.recomendados-img{
+    width: 100%;
+    height: 150px;
+}
+.recomendados-persona{
+    padding: 0 15px;
+    position: relative;
+    top: -70px;
+    color: #fff;
+}
+.recomendados-descricao{
+    padding: 20px;
+}
+/*CATEGORIAS*/
+.categorias{
+    width: 100%;
+    height: 100%;
+}
+.container-categorias{
+    display: flex;
+    height: 120%;
+}
+.categorias-veja{
+    width: 80%;
+    background: url(/img/tecnologia.jpg) no-repeat center ;
+    background-size: cover;
+    height: auto;
+    flex-direction: column;
+    position: relative;
+}
+.categorias-livros{
+    background: url(/img/livros.jpg) no-repeat center ;
+    background-size: cover;
+    height: auto;
+    mix-blend-mode: unset;
+    box-shadow: 0 0 1000px #ffc43b inset, 0 0 1000px #ffc43b inset;
+}
+.categorias-make{
+    background: url(/img/make.jpg) no-repeat center top;
+    background-size: cover;
+    height: auto;
+}
+.categorias-make:before,
+.categorias-make:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.categorias-make:before {
+  z-index: 2;
+  mix-blend-mode: multiply;
+  box-shadow: 0 0 1000px 100px #d41e5b inset, 0 0 1000px 100px #d41e5b inset;
+  opacity: 0.8;
+}
+.categorias-veja-title {
+    padding: 100px;
+    color: #fff;
+    z-index: 99;
+}
+.categorias-veja-title h1{
+    font-size: 70px;
+}
+.categorias-veja-mais{
+    z-index: 99;
+}
+.veja-mais{
+    padding: 15px 50px;
+    border: 5px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+}
+.categorias-produtos{
+    width: 100%;
+    padding-left: 0;
+    background: #5067c1;
+    align-items: start;
+    padding-left: 80px;
+    padding-bottom: 25px;
+}
+.categorias-bg-livros{
+    background-color: #ffc43b;
+} 
+.categorias-bg-make{
+    background-color: #d41e5b;
+} 
+.categorias-tendencias{
+    width: 90%;
+    padding-top: 30px;
+}
+.container-ofertas{
+    overflow-x: auto;
+    max-width: auto;
+}
+.tendencias-title{
+    color: #fff;
+    font-size: 18px;
+}
+.tendencias-title h4{
+    font-weight: bolder;
+    font-size: 25px;
+    margin-bottom: 0;
+}
+.tendencias-img{
+    margin-top: 15px;
+    margin-right: 15px;
+    background: url(/img/recomendado-2.jpg) no-repeat center;
+    background-size: cover;
+    width: 80%;
+    height: 150px;
+}
+.tendencias-persona{
+    position: relative;
+    top: 100px;
+    left: 20px;
+    justify-content: space-evenly;
+}
+.tendencias-descricao{
+    color: #fff;
+    margin-left: 15px;
+}
+.container-ofertas{
+    width: 90%;
+}
+.ofertas-title{
+    color: #fff;
+    margin: 25px 0 5px 0;
+    font-weight: bolder;
+}
+.ofertas-title h4{
+    font-weight: bolder;
+    font-size: 25px;
+}
+.ofertas-card{
+    width: 160px;
+    background: #fff;
+    margin-right: 5px;
+    padding-top: 12px;
+}
+.ofertas-card img{
+    width: 90px;
+    height: 90px;
+    display: block;
+    margin: 10px auto;
+}
+.ofertas-card hr{
+    margin: 10px 0;
+}
+.ofertas-valor{
+    padding: 10px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+.ofertas-valor p{
+    font-size: 13px;
+}
+/*CANAIS*/
+.canais-card{
+    margin-bottom: 50px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 0;
+}
+.canais-card-top{
+    background: url(/img/fitness.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 80px;
+}
+.canais-persona{
+    position: relative;
+    top: -40px;
+}
+.canais-persona img{
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+.canais-produtos h5{
+    font-size: 23px;
+    margin: 0;
+    margin-left: 20px;
+}
+.canais-img{
+    padding: 0 20px;
+    position: relative;
+    top: 25px;
+}
+.canais-img img{
+    padding: 0 5px;
+    height: 120px;
+}
+/*VENDEDORES*/
+.vendedores{
+    padding-top: 20px;
+}
+.container-vendedores{
+    width: 90%;
+}
+.vendedores-title{
+    margin: 10px 0;
+}
+.vendedores-avaliaçoes{
+    overflow-x: auto;
+}
+.vendedores-persona{
+    width: 100%;
+}
+.vendedores-card{
+    padding: 20px;
+}
+.vendedores-persona img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto
+}
+/*FOOTER*/
+.container-footer{
+    margin: 0 auto;
+    color: #000;
+}
+.footer-menu a{
+    padding-right: 20px;
+}
+.footer-app a{
+    background-color: #fee500;
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+/*! MODAL CENTER */
+.modal-center .modal{
+    padding:0!important
+}
+.modal-center .modal-body .btn{
+    position:absolute;
+    right:0;
+    top:0;
+    z-index:9999;
+    background:#0e5129;
+    border:0;
+    border-radius:0 5px 0 0;
+    color:#fff;
+    padding:15px
+}
+.modal-dialog{
+    width:770px!important;
+    margin:30px auto!important;
+    height:auto
+}
+.modal-body .ekko-lightbox-item img{
+    height:100%
+}
+.modal-center .vertical-alignment-helper{
+    display:table;
+    height:100%;
+    width:100%
+}
+.modal-center .vertical-align-center{
+    display:table-cell;
+    vertical-align:middle
+}
+.modal-center .modal-content{
+    width:100%;
+    height:auto;
+    max-height:550px;
+    max-width:800px;
+    margin:0 auto
+}
+/*! MODAL CENTER !*/
+
+/*! Galeria Slick Slider !*/
+.galeria .division{
+    max-width:calc(100%/5);
+    align-items:center;
+    text-align:center;
+    border:1px solid #fff;
+    width:100%;
+    height:135px;
+    display:grid;
+    float:left;
+}
+.galeria .container .zoom{
+    visibility:hidden;
+    transition:top 51s ease;
+    position:relative;
+    height:100%;
+    width:100%!important;
+    display:grid!important;
+    align-items:center!important
+}
+.galeria .container .division:hover .zoom{
+    max-width:100%;
+    background-color:rgba(38,51,27,.75);
+    text-align:center;
+    visibility:visible;
+    -moz-transition:all .5s ease-in-out;
+    transition:all .5s ease-in-out
+}
+.galeria .division .zoom a{
+    height:100%;
+    display:grid;
+    align-items:center;
+    width:100%
+}
+.galeria .division .zoom img{
+    width:100%;
+    max-width:35px;
+    margin:0 auto
+}
+/*! Fim Galeria Slick Slider !*/
+
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    .navbar-header, .navbar-collapse {margin: 0px -15px !important;}
+    .navbar-collapse {border-top: 1px solid #e0e0e0;}
+}
+
+/*! COLAPSE 991px !*/
+@media (max-width: 991px) {
+    .hide991 {display: none;}
+    .show991 {display: block;}
+    .navbar-header { 
+      float: none; 
+    }
+    .navbar-left,
+    .navbar-right { 
+      float: none !important;
+    }
+    
+    .navbar-default .navbar-nav > li > a {padding: 15px}
+    .navbar-toggle { 
+    margin: 16px 12px;
+    display: block; 
+    }
+    .navbar-fixed-top { 
+      top: 0; 
+      border-width: 0 0 1px; 
+    }
+    .navbar-collapse.collapse { 
+      display: none!important; 
+    }
+    .navbar-collapse.collapsing {overflow: hidden;}
+    .navbar-nav { 
+      float: none!important; 
+    }
+    .navbar-nav > li { 
+      float: none;
+    }
+    .collapse.in { 
+      display:block !important;
+    }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+    .navbar-collapse {padding: 0px}
+    .navbar-nav {margin: 0px;}
+}
+@media screen and (max-width: 767px) {
+    .navbar-nav {margin-bottom: 0px;margin-top: 0px}
+}
+/*! FIM COLAPSE 991px !*/
