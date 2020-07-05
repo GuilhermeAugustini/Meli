@@ -466,6 +466,9 @@ p, a, div, h1, h2 {
     }
 }
 @media(max-width:767px){
+    .nav-form{
+        margin-left: 0;
+    }
     .container-canais{
         margin: 0 25px;
     }

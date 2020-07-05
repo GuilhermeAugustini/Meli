@@ -20,6 +20,9 @@
 
     <link href="/perfil.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="slick/slick.css" />
+    <link rel="stylesheet" href="slick/slick-theme.css" />
+
 </head>
 
 <body>
@@ -230,7 +233,7 @@
                     <h4>Vendedores favoritos de Marquinhos</h4>
                 </div>
                 <div class="vendedores-avaliacoes flex ">
-                    <div class="vendedores-card flex-center flex-column">
+                    <div class="vendedores-card flex-center flex-column" data-slide="0">
                         <div class="vendedores-persona center">
                             <img src="/img/persona.jpg">
                             <p>Loja Scarlet</p>
@@ -249,7 +252,7 @@
                             <i class="fas fa-star-half"></i>
                         </div>
                     </div>
-                    <div class="vendedores-card flex-center flex-column">
+                    <div class="vendedores-card flex-center flex-column" data-slide="1">
                         <div class="vendedores-persona center">
                             <img src="/img/persona.jpg">
                             <p>Loja Scarlet</p>
@@ -268,7 +271,7 @@
                             <i class="fas fa-star-half"></i>
                         </div>
                     </div>
-                    <div class="vendedores-card flex-center flex-column">
+                    <div class="vendedores-card flex-center flex-column" data-slide="2">
                         <div class="vendedores-persona center">
                             <img src="/img/persona.jpg">
                             <p>Loja Scarlet</p>
@@ -287,7 +290,7 @@
                             <i class="fas fa-star-half"></i>
                         </div>
                     </div>
-                    <div class="vendedores-card flex-center flex-column">
+                    <div class="vendedores-card flex-center flex-column" data-slide="3">
                         <div class="vendedores-persona center">
                             <img src="/img/persona.jpg">
                             <p>Loja Scarlet</p>
@@ -306,7 +309,7 @@
                             <i class="fas fa-star-half"></i>
                         </div>
                     </div>
-                    <div class="vendedores-card flex-center flex-column">
+                    <div class="vendedores-card flex-center flex-column" data-slide="4">
                         <div class="vendedores-persona center">
                             <img src="/img/persona.jpg">
                             <p>Loja Scarlet</p>
@@ -360,6 +363,18 @@
 
         </div>
     </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.container-recomendados').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+            });
+        });
+    </script>
 
     <script src="/js/jquery.min.js"></script>
     <script src="/js/jquery.mask.js"></script>

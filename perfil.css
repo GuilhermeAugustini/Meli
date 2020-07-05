@@ -433,8 +433,24 @@ p, a, div, h1, h2 {
 /*! MODAL CENTER !*/
 
 @media(max-width:767px){
+    .nav-form{
+        margin-left: 0;
+    }
     .footer-app{
         margin-top: 30px;
+    }
+}
+@media(max-width: 480px){
+    .banner-perfil{
+        top: 70px;
+        left: 20px;
+    }
+    .banner-perfil img {
+        width: 120px;
+        height: 120px;
+    }
+    .banner-perfil h2{
+        font-size: 25px;
     }
 }
 @media only screen and (max-width: 991px) and (min-width: 768px) {
